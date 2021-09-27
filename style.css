@@ -169,7 +169,6 @@ button:hover span {
     
 button:hover:before {
     content:"Download Resume"}
-    
 /* cards */
 .card {
     width: 60%;
