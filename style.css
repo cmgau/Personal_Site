@@ -62,8 +62,18 @@ nav ul li {
     list-style: none;
     display: inline-block;
     margin-left: 60px;
+    transition-duration: 0.4s;
 }
 
+nav ul li:hover {
+    background: transparent linear-gradient(257deg, #FC3E99 0%, #470590 100%) 0% 0% no-repeat padding-box;
+    color: white;
+    padding: 4px;
+    transform: scale(2,2));}
+
+
+
+/* Menu List */
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -75,19 +85,19 @@ nav ul li a {
 /* row will affect anything inside it */
 .row {
     display: flex;
-    height: 88%;
+    height: 80%;
     align-items: center;
 }
 
 /* controls the space for padding */
 .col{
-    flex-basis: 50%;
-    /* padding-right: ; */
+    flex-basis: 100%;
+    display: flex;
 }
 
 .Intro{
     flex-basis:750px;
-    padding-right: 330px;
+    padding-right: 80px;
 }
 
 /* fonts */
@@ -127,12 +137,12 @@ p {
     color:#fff;
     text-shadow: 0 0 5px #000;
     font-family: 'Open Sans', sans-serif;
-}
+    }
 
 button {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    width: 180px;
+    width: 60%;
     color: #000;
     font-size: 1rem;
     padding: 1rem 0;
@@ -153,10 +163,17 @@ button:hover {
     transform: translateY(-10px);
     
   }
+
+button:hover span {
+    display:none}
+    
+button:hover:before {
+    content:"Download Resume"}
+    
 /* cards */
 .card {
-    width: 40%;
-    height: 420px;
+    width: 60%;
+    height: 520px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -171,23 +188,26 @@ button:hover {
 
 
 .card1{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/pic-1.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(images/pic-1.png);
 }
 
 .card2{
-        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/pic-2.png);
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(images/pic-2.png);
 }
 
-/* .card3{
-    background-image: url(images/pic-3.png);
+.card3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url(images/pic-3.png);
 }
+    
 
-.card4{
+    
+/* .card4{
     background-image: url(images/pic-4.png);
 } */
 
 .card:hover {
     transform: translateY(-10px);
 }
+
 
 
